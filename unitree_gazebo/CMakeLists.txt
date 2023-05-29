@@ -48,10 +48,8 @@ target_link_libraries(unitreeFootContactPlugin ${catkin_LIBRARIES} ${GAZEBO_LIBR
 add_library(unitreeDrawForcePlugin SHARED plugin/draw_force_plugin.cc)
 target_link_libraries(unitreeDrawForcePlugin ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
 
-# add_executable(unitree_external_force src/exe/external_force.cpp)
-# target_link_libraries(unitree_external_force ${catkin_LIBRARIES})
+add_executable(unitree_low_2_motor_cmd src/low_2_motor_cmd.cpp)
+target_link_libraries(unitree_low_2_motor_cmd ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
 
-# add_executable(unitree_servo src/exe/servo.cpp)
-# target_link_libraries(unitree_servo ${PROJECT_NAME} ${catkin_LIBRARIES})
-
-
+add_executable(unitree_motor_2_low_state src/motor_2_low_state.cpp)
+target_link_libraries(unitree_motor_2_low_state ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
