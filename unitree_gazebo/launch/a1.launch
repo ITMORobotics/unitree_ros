@@ -59,7 +59,7 @@
         <arg name="rname" value="$(arg rname)"/>
     </include>
 
-    <node pkg="unitree_gazebo" type="unitree_low_2_motor_cmd" name="$(arg rname)_low_2_motor_cmd" launch-prefix="bash -c 'sleep 5; $0 $@' "/>
-    <node pkg="unitree_gazebo" type="unitree_motor_2_low_state" name="$(arg rname)_motor_2_low_state" launch-prefix="bash -c 'sleep 5; $0 $@' "/>
+    <node pkg="unitree_gazebo" type="unitree_low_2_motor_cmd" name="$(arg rname)_low_2_motor_cmd" launch-prefix="bash -c 'sleep 10; $0 $@' "/>
+    <node pkg="unitree_gazebo" type="unitree_motor_2_low_state" name="$(arg rname)_motor_2_low_state" launch-prefix="bash -c 'sleep 10; $0 $@' "/>
 
 </launch>
