@@ -1,0 +1,100 @@
+<sdf version='1.7'>
+  <model name='stairs'>
+    <link name='step_1'>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>3</mass>
+        <inertia>
+          <ixx>0</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0</iyy>
+          <iyz>0</iyz>
+          <izz>0</izz>
+        </inertia>
+      </inertial>
+      <collision name='step_1_collision'>
+        <pose>1 0 0.05 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.2 2 0.1</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='step_1_fixed_joint_lump__step_2_collision_1'>
+        <pose>1.2 0 0.15 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.2 2 0.1</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='step_1_fixed_joint_lump__step_3_collision_2'>
+        <pose>1.9 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.2 2 0.1</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='step_1_visual'>
+        <pose>1 0 0.05 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.2 2 0.1</size>
+          </box>
+        </geometry>
+      </visual>
+      <visual name='step_1_fixed_joint_lump__step_2_visual_1'>
+        <pose>1.2 0 0.15 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.2 2 0.1</size>
+          </box>
+        </geometry>
+      </visual>
+      <visual name='step_1_fixed_joint_lump__step_3_visual_2'>
+        <pose>1.9 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.2 2 0.1</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <static>1</static>
+  </model>
+</sdf>

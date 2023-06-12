@@ -37,6 +37,11 @@
         <include>
             <uri>model://ground_plane</uri>
         </include>
+        <!-- Stairs 501 -->
+        <include>
+            <uri>model://stairs501</uri>
+            <pose>1 0 0 0 0 0</pose> 
+        </include>
         <!-- environment blocks, obstacles or stairs -->
         <model name="static_environment">
         <static>true</static>
